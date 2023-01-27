@@ -1,0 +1,104 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+}
+.banner_text_p{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    font-size: 26px;
+    font-family: 'Niconne', cursive;
+    color: #ebbaa9
+}
+
+.banner_inside span{
+    display: block;
+    font-size: 64px;
+    font-family: 'Lato', sans-serif;
+    color: #333333;;
+}
+
+@media screen and (max-width: 900px){
+    .banner_inside span{
+        font-size: 50px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .banner{
+        padding-left: 30px;
+    }
+
+    .banner_text_p{
+        font-size: 20px;
+    }
+    .banner_text{
+        font-size: 18px;
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner_inside span{
+        font-size: 40px;
+    }
+
+    .banner_text_p{
+        font-size: 15px;
+    }
+    .banner_text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .banner_inside span{
+        font-size: 30px;
+    }
+
+    .banner_text_p{
+        font-size: 15px;
+    }
+
+    .banner{
+        padding-left: 20px;
+    }
+    .banner_text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 470px){
+    .banner{
+        padding-left: 10px;
+    }
+
+    .banner_inside span{
+        
+        margin-left: 3px;
+    }
+    .banner_text ul li{
+        font-size: 15px;
+    }
+    .banner_text  {
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+}
+.banner_text ul{
+    margin-top: 50px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.banner_text ul li {
+    /* font-size: 22px; */
+    font-family: 'Niconne', cursive;
+    color: #ebbaa9
+    
+}

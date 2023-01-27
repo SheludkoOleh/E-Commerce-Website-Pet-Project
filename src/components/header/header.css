@@ -1,0 +1,253 @@
+
+  .container {
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+    /* ul {
+    list-style: none;
+   } */
+  
+   a {
+    text-decoration: none;
+   }
+  
+   header {
+    padding: 5px 0;
+   }
+  
+   header ul {
+    display: inline-block;
+   }
+  
+   header ul li {
+    display: inline-flex;
+    margin-left: 30px;
+   }
+  
+   header ul li a {
+     font-weight: 500;
+     transition: 0.5s;
+     color: black;
+   }
+  
+   header ul li a:hover{
+    color: palevioletred;
+    font-weight: 500;
+   }
+  
+   .HeaderIcon {
+    max-lines: 20px;
+    transition: 0.5s;
+    
+   }
+  
+   .navbar-items-icon {
+    color: #000;
+    display: none;
+   }
+  
+   header.active {
+    position: sticky; 
+    top: 0;
+    left: 0;
+    background-color: #F4EBDE;
+    box-shadow: 0 2 px 28 px 0 rgb(0  0 0 /6%) ;
+    width: 100%;
+    z-index: 10;
+   }
+   .logo img {
+    
+    height: 89px;
+
+   }
+
+  /* card item */
+
+   .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 77;
+  }
+  .cardItem {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 490px;
+    height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    z-index: 88;
+  }
+  
+  .cardhide {
+    display: none;
+  }
+
+  .cardItem .title .icon {
+    font-size: 25px;
+  }
+  .emptyCard {
+    text-align: center;
+  }
+  .emptyCard img {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .checkOut {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    width: 88%;
+  }
+  .checkOut button {
+    padding: 20px;
+    background: #212121;
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+  .checkOut button:disabled {
+    background: #7a7a7a;
+    cursor: none;
+  }
+  .checkOut button span {
+    margin-right: 80px;
+  }
+  .checkOut button label {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+  }
+  
+
+  /* cartContent */
+.cardContent {
+    margin: 40px 0;
+    display: flex;
+  }
+.details_shoping_cart {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-left: 5px;
+ }
+ .details_shoping_cart p {
+  padding-bottom: 10px;
+}
+  .cardContent .img {
+    width: 10px;
+    height: 10px;
+    display: contents;
+  }
+  
+  .cardContent img {
+    width: 20%;
+    height: 100%;
+  }
+  
+  .cardContent .price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .cardContent .price .num {
+    font-size: 17px;
+    padding: 0 4px 0 4px;
+  }
+  .plus {
+    padding-top: 2px;
+    margin-right: 5px;
+  }
+  .minus {
+    padding-top: 2px;
+    margin-left: 5px;
+  }
+  .minus:hover,
+  .plus:hover {
+    color: #fff;
+    background-color: black
+  }
+  .cardContent .price .priceTitle {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .remove_flexcCenter {
+    margin-left: 20px;
+  }
+  .remove_flexcCenter:hover{
+    color: #fff;
+    background-color: black
+  }
+
+  .total_price {
+    display: flex;
+    justify-content: flex-end
+  }
+  .total_price span {
+    margin-right: 5px;
+  }
+  
+   @media screen and (max-width: 768px) {
+    header.icon {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links-sidebar{
+      position: absolute;
+      display: block;
+      left: 0px;
+      top: 75px;
+      transition: 0.5s;
+      width: 100%;
+      height: 30vh;
+      z-index: 5; 
+    }
+  
+    .nav-links-slidebar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+  
+    header ul li {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  
+    .navbar-items-icon {
+      display: block; 
+      position: absolute;
+      right: 30px;
+      border: 1px solid black;
+      padding: 5px 10px;
+    }
+  
+   };
+    
+   
+  

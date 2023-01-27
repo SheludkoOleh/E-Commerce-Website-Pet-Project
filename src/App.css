@@ -1,0 +1,19 @@
+
+
+@font-face {
+  font-family: 'TanPearl';
+  src: url(./fonts/TAN-PEARL.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
+  background-color: #F4EBDE;
+}
