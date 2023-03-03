@@ -1,0 +1,22 @@
+:root {
+    /* COLORS */
+    --clr-background: #F4EBDE;
+    --clr-backgroundwhire: #FFFFF0;
+    --clr-brown: #CD853F;
+    --clr-h2: #333333;
+    --clr-p:#ebbaa9;
+
+
+
+    /* GAPS */
+    --gap-xs: 4px;
+    --gap-sm: 8px;
+    --gap-md: 16px;
+    --gap-lg: 32px;
+    --gap-xl: 64px;
+  
+    /* WIDTH */
+    --width-sm: 592px;
+    --width-md: 794px;
+    --width-full: 100%;
+  }

@@ -1,6 +1,7 @@
 import React from 'react'
 import icon from "../../assets/images/icon.png"
 import "./product.css"
+import '../../assets/styless/typography.css'
 import { product } from '../../assets/data/data'
 import { ProductCard } from './ProductCard'
 
@@ -9,10 +10,15 @@ export const Product = () => {
        <>
         <section className='product'>
             <div className='shop_banner'>
-                <p>Shop</p>
-                <h3>Start Your Skincare today</h3>
-                <img className='qwq' id='icon' src={icon} alt="" />
-                <p>Select the soap you like and add it to the shopping cart.</p>
+                <div className='caption-lg '>
+                    <p>Shop</p>
+                </div>
+                <h3 className='heading-lg'>Start Your Skincare today</h3>
+                <div className='icon' id='icon'> 
+                </div>
+                <div className='body-lg'>   
+                    <p>Select the soap you like and add it to the shopping cart.</p>
+                </div>
             </div>
             <div className='conteinergrid3'>
                 {product.map((item) => (

@@ -1,0 +1,6 @@
+.between_block {
+    background: url('../../assets/images/between.png'), rgb(255, 255, 255);;
+    height: 129px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

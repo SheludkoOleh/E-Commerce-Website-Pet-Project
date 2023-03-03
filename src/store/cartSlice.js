@@ -1,52 +1,48 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-
 const cartSlice = createSlice({
-    name: 'cart',
-    initialState: {
-        itemsList: [],
-        totalQuantity: 0,
+  name: 'cart',
+  initialState: {
+    itemsList: [],
+    totalQuantity: 0,
+  },
+  reducers: {
+    addToCart: (state, { payload }) => {
+      const { id, name, cover, price } = payload
+      const existingIndex = state.itemsList.findIndex((item) => item.id === id)
+
+      if (existingIndex >= 0) {
+        state.itemsList[existingIndex].quantity++
+        state.itemsList[existingIndex].totalPrice += price
+      } else {
+        state.itemsList.push({
+          id,
+          name,
+          cover,
+          price,
+          quantity: 1,
+          totalPrice: price,
+        })
+        state.totalQuantity++
+      }
     },
-    reducers: {
-        addToCart(state,action){
-            const newItem = action.payload
+    removeFromCart: (state, { payload }) => {
+      const existingIndex = state.itemsList.findIndex((item) => item.id === payload)
 
-            //chek items alredy exist
-             const existItems = state.itemsList.find((item) => item.id === newItem.id)
-
-             if (existItems) {
-                existItems.quantity++
-                existItems.totalPrice += newItem.price
-             } else {
-                state.itemsList.push({
-                    id: newItem.id,
-                    price: newItem.price,
-                    quantity: 1,
-                    totalPrice: newItem.price,
-                    name: newItem.name,
-                    cover: newItem.cover,
-                })
-                state.totalQuantity++
-
-            }
-        },  
-        removeFromCart(state, action){
-            const id = action.payload
-            const exitstingItem = state.itemsList.find((item) => item.id === id)
-            if (exitstingItem.quantity === 1) {
-                state.itemsList = state.itemsList.filter((item) => item.id !== id)
-                state.totalQuantity--
-            } else {
-                exitstingItem.quantity--
-                exitstingItem.totalPrice -= exitstingItem.price
-            }
-        },
-        removeAllCart(state,action){
-            const id = action.payload
-            state.itemsList = state.itemsList.filter((item) => item.id !== id)
+      if (existingIndex >= 0) {
+        if (state.itemsList[existingIndex].quantity === 1) {
+          state.itemsList.splice(existingIndex, 1)
+          state.totalQuantity--
+        } else {
+          state.itemsList[existingIndex].quantity--
+          state.itemsList[existingIndex].totalPrice -= state.itemsList[existingIndex].price
         }
-    
+      }
     },
+    removeAllCart: (state, { payload }) => {
+      state.itemsList = state.itemsList.filter((item) => item.id !== payload)
+    },
+  },
 })
 
 export const cartActions = cartSlice.actions

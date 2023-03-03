@@ -1,11 +1,14 @@
+.shop_banner{
+    display: flex;
+    flex-direction: column;
+}
+
 .product {
     width: 100%;
-    padding: 30px;
+    /* padding: 30px; */
     background-color: white;
-    background-color:  #F4EBDE;
 }
 .conteinergrid3 {
-    background-color:  #F4EBDE;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -15,7 +18,6 @@
 .product img {
     width: 293px;
     height: 309px;
-    margin-bottom: 20px;
     background-color:white;
     padding: 55px;
 }
@@ -61,25 +63,30 @@
     border: 2px;
 }
 .shop_banner #icon {
-    width: 163px;
-    height: 139px;
+    background: url('../../assets/images/icon.png');
+    background-size: 51%;
+    background-position-x: 45%;
+    background-position-y: 60%;
+    width: 116px;
+    height: 64px;
     text-align: center;
     display: flex;
-    margin: auto; 
-    color: #F4EBDE;
-    background:  #F4EBDE;
+    margin: auto;
+    background-repeat: no-repeat;
 }
 
 .shop_banner p {
     text-align: center;
-    color: #ebbaa9;
-    margin-bottom: 40px;
+    
 }
 .shop_banner h3 {
     text-align: center;
-    font-weight: bold;
+    font-size: 40px;
 }
 
+.box_boxItem img {
+    background-color: rgb(251, 235, 222);
+}
 
 @media screen and (max-width: 850px) {
     .conteinergrid3 {
