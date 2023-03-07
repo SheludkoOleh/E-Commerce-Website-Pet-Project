@@ -7,12 +7,14 @@ import {Product} from './components/product/Product';
 import Banner from './components/product/Banner';
 import Between from './components/between/Between';
 import About from './components/category/About';
-import { Categories } from './components/category/Categories';
+import ProductCarousel from './components/category/Carousel'
+import Categories from './components/category/Categories';
 
 function App() {
   return (
     <>
     <Router>
+      {/* <ProductCarousel /> */}
       <Header />
       <Banner/>
       <Between />

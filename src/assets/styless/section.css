@@ -10,7 +10,8 @@
 
 .inside_about {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 20px;
 }
 
 .inside_about h3 {
@@ -50,4 +51,21 @@
 .svg_text svg {
     margin-right: 10px;
     color: #ebbaa9;
+}
+
+.img_about img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .inside_about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_about {
+        display: flex;
+        justify-content: center;
+    }
 }
