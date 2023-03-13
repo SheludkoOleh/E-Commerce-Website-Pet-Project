@@ -28,6 +28,10 @@
   line-height: 40px;
 }
 
+#headingh3 {
+  color: rgb(121,75,139);
+}
+
 .heading-xs {
   /* font-family: Lato; */
   font-size: 16px;
@@ -37,7 +41,7 @@
 
 .body-lg {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 25px;
   color: rgb(153,136,125);
   font-family: 'Lato';
 

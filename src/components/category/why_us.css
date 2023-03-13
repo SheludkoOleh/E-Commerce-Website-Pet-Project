@@ -1,14 +1,16 @@
-    #color{
-        color: rgb(121,75,139);
-    }  
-    #color p{
-        color: rgb(121,75,139);
+    #color_caption p{ 
+        color: rgb(184,164,192);
         
     }     
     
+    #color_body p{
+        color:rgb(130,113,137);
+    }
     .svg_text {
         font-size: 17px;
-        color: rgb(153,136,125);
+        font-weight: 400;
+        line-height: 29px;
+        color: rgb(147,132,155);
     }
 
     .why_us{
@@ -22,12 +24,13 @@
 
     .why_us_inside{
         display: flex;
-        padding: 30px;
+        padding-top: 60px;
         justify-content: center;
 
     }
 
     #why_text_section {
+        padding-left: 50px;
         height: 414px;
         width: 800px;
        
@@ -37,10 +40,17 @@
    }
 
 
-   @media screen and (max-width: 110px) {
+   @media screen and (max-width: 1410px) {
 
     .why_us{
-     background-position-x: 43%;
+     background-position-x: 32%;
+    }
+   }
+
+   @media screen and (max-width: 1150px) {
+
+    .why_us{
+     background-position-x: 38%;
     }
    }
 
@@ -53,11 +63,16 @@
 
    @media screen and (max-width: 640px) {
 
+    #why_text_section {
+        padding-left: 10px;
+    }
+
     .empty_div {
         width: 0px;
        }
 
     .why_us{
      background-position-x: 46%;
+     background-size: auto;
     }
    }

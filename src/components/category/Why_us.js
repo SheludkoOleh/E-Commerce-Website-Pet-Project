@@ -7,14 +7,13 @@ function Why_us() {
     <section className='why_us'>
         <div className='why_us_inside' id='color'>
             <div className='empty_div'>
-                {/* <div className='inside_empty_div'></div> */}
             </div>
             <div className='text_section' id='why_text_section'>
-                <div className="caption-lg" id='color'>
+                <div className="caption-lg" id='color_caption'>
                     <p>Why us</p>
                 </div> 
-                <h3 className='heading-lg'>Why Shop at Purity?</h3>
-                <div className='body-lg' id='color'>
+                <h3 className='heading-lg' id='headingh3'>Why Shop at Purity?</h3>
+                <div className='body-lg' id='color_body'>
                     <p>Our range of handcrafted soaps is made to treat you and your skin, from morning washing-ups to evening relaxing baths.</p>
                 </div>
                 <div className='svg_text' id='color'>
