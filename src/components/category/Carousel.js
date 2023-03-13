@@ -34,7 +34,7 @@ const ProductCarousel = () => {
           },
         },
         {
-          breakpoint: 550,
+          breakpoint: 650,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

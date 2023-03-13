@@ -7,15 +7,15 @@
 
 .inside_discount {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 500px;    
-    padding: 0px 110px 0px 110px;
+    
 }
 
 .section_1{
     height: 350px;
-    width: 470px;
+    width: 750px;
     background-color: rgb(251, 235, 222);
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
 .section_2 {
     background-image: url('../../assets/images/discount.png') ;
     height: 350px;
-    width: 670px;
+    width: 950px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -67,4 +67,131 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 36px;
+}
+
+
+@media screen and (max-width: 1540px) {
+    .section_1 {
+        width: 550px;
+    }
+
+    .section_2 {
+        width: 750px;
+     }
+}
+
+@media screen and (max-width: 1420px) {
+    .section_1 {
+        width: 500px;
+    }
+
+    .section_2 {
+        width: 700px;
+     }
+}
+
+@media screen and (max-width: 1420px) {
+    .section_1 {
+        width: 420px;
+    }
+
+    .section_2 {
+        width: 620px;
+     }
+}
+
+@media screen and (max-width: 1120px) {
+    .section_1 {
+        width: 350px;
+    }
+
+    .section_2 {
+        width: 570px;
+     }
+}
+
+@media screen and (max-width: 950px) {
+    .section_1 {
+        width: 320px;
+    }
+
+    .section_2 {
+        width: 470px;
+     }
+}
+
+@media screen and (max-width: 850px) {
+
+    .section_1 {
+        width: 270px;
+    }
+
+    .section_2 {
+        width: 430px;
+     }
+}
+
+@media screen and (max-width: 750px) {
+
+    .inside_discount {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_1 {
+        width: 570px;
+        margin-bottom: 30px;
+    }
+
+    .section_2 {
+        width: 570px;
+     }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .inside_discount {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_1 {
+        width: 470px;
+        margin-bottom: 30px;
+    }
+
+    .section_2 {
+        width: 470px;
+     }
+}
+
+@media screen and (max-width: 480px) {
+
+    .inside_discount {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_1 {
+        width: 370px;
+        margin-bottom: 30px;
+    }
+
+    .section_2 {
+        width: 370px;
+     }
+}
+
+@media screen and (max-width: 380px) {
+
+    .inside_discount {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_1 {
+        width: 280px;
+        margin-bottom: 30px;
+    }
+
+    .section_2 {
+        width: 280px;
+     }
 }

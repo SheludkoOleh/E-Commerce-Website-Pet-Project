@@ -15,7 +15,7 @@
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    transform: translate(0, -229%);
 
     cursor: pointer;
     color: black;
@@ -61,7 +61,7 @@
 
 .slick-prev
 {
-    left: -5px;
+    left: -29px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -79,7 +79,7 @@
 
 .slick-next
 {
-    right: 0px;
+    right: -29px;
 }
 [dir='rtl'] .slick-next
 {
@@ -98,4 +98,76 @@
 
 .slick-dots {
     display: none!important;
+}
+
+
+@media screen and (max-width: 1120px) {
+
+    .slick-prev
+{
+    left: -15px;
+}
+
+    .slick-next
+{
+    right: -15px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .slick-prev
+{
+    left: 25px;
+}
+
+    .slick-next
+{
+    right: 25px;
+}
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .slick-prev
+{
+    left: 3px;
+}
+
+    .slick-next
+{
+    right: 3px;
+}
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .slick-prev
+{
+    left: -12px;
+}
+
+    .slick-next
+{
+    right: -12px;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .slick-prev
+{
+    left: 205px;
+}
+
+    .slick-next
+{
+    right: 205px;
+}
+
 }

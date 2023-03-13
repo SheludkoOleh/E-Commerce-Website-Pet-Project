@@ -26,7 +26,7 @@ function App() {
       <Between_why />
       <Why_us />
       <Between_why_us />
-      <Product />
+      {/* <Product /> */}
       <Switch>
         <Route path='/home' exact component={HomePages} />
       </Switch>
