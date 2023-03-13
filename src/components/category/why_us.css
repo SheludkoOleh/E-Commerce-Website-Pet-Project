@@ -1,0 +1,63 @@
+    #color{
+        color: rgb(121,75,139);
+    }  
+    #color p{
+        color: rgb(121,75,139);
+        
+    }     
+    
+    .svg_text {
+        font-size: 17px;
+        color: rgb(153,136,125);
+    }
+
+    .why_us{
+        background-image: url('../../assets/images/why_we.svg');
+        background-size: cover;
+        background-position-x: 25%;
+        height: 676px;
+        
+    
+    }
+
+    .why_us_inside{
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+
+    }
+
+    #why_text_section {
+        height: 414px;
+        width: 800px;
+       
+    }
+   .empty_div {
+    width: 600px;
+   }
+
+
+   @media screen and (max-width: 110px) {
+
+    .why_us{
+     background-position-x: 43%;
+    }
+   }
+
+   @media screen and (max-width: 820px) {
+
+    .why_us{
+     background-position-x: 43%;
+    }
+   }
+
+   @media screen and (max-width: 640px) {
+
+    .empty_div {
+        width: 0px;
+       }
+
+    .why_us{
+     background-position-x: 46%;
+    }
+   }

@@ -4,3 +4,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.between_block_why {
+    background: url('../../assets/images/between_why_us.png');
+    height: 129px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.between_block_why_us {
+    background: url('../../assets/images/between_why.png');
+    height: 129px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: none;
+
+}

@@ -1,7 +1,7 @@
 .heading-sm,
 .heading-md,
 .heading-lg {
-  /* font-family: 'Lexend', sans-serif; */
+  font-family: 'Lexend', sans-serif;
   font-weight: bold;
   font-size: 64px;
   line-height: 1.1;
@@ -49,7 +49,7 @@
 }
 
 .body-lg p{
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .caption-lg,
@@ -75,4 +75,9 @@
 
  .caption-lg p {
   color: #ebbaa9;
+ }
+
+ .text_section h3 {
+  font-size: 42px;
+  padding-bottom: 35px;
  }

@@ -33,8 +33,10 @@
     display: flex;
     justify-content: space-around;
     height: 100%;
+    padding: 0px 110px 0px 110px;
 }
 .categories {
+    height: 600px;
     padding: 20px;
     background-color: white;
 }
