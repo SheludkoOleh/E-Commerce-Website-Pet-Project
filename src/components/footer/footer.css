@@ -1,0 +1,139 @@
+.footer_inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(251, 235, 222);
+  }
+.contact_section {
+    display: flex;
+    
+}
+
+.banner_section{
+    width: 30%;
+}
+
+.nav_footer{
+    margin-right: 46px;
+    margin-left: 20px;
+}
+
+.subscribe_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_text p{
+    padding-top: 35px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(165, 148, 137);
+    font-size: 15px;
+    line-height: 21px;
+}
+.banner_icon {
+    padding-top: 35px;
+    cursor: pointer;
+    color: rgb(232, 176, 156);
+    fill: rgb(232, 176, 156);
+}
+
+
+
+.title_footer{
+    font-family: 'Lexend', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    color: rgb(235, 186, 169);
+}
+
+.contact_section{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(165, 148, 137);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav_footer ul li a{
+    display: flex;
+    color: rgb(147,111,98);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(165, 148, 137);
+    margin-top: 15px;
+}
+.contacts_inside span {
+    color: rgb(147,111,98);
+}
+
+.mail,
+.phone_section, 
+.adress_section{
+    margin-top: 20px;
+}
+.subscribe_section {
+    gap: 20px;
+}
+.subscribe_text{
+    font-family: 'Lexend', sans-serif;
+    color: rgb(147,111,98);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+form input{ 
+    font-family: inherit;
+    width: 100%;
+    border-color: rgb(235, 186, 169);
+    background-color: rgb(244, 233, 224);
+    color: rgb(165, 148, 137);
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    padding: 20px;
+}
+
+.button_subscribe{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(235, 186, 169);
+    color: white;
+    cursor: pointer;
+}
+.button_subscribe:hover {
+    background-color: black;
+    color: white;
+}
+
+button span {
+    padding-right: 10px;
+}
+
+@media screen and (max-width:770px) {
+    .footer_inside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_section{
+        width: 100%;
+    }
+
+    .banner_section .logo{
+        display: flex;
+        justify-content: center;
+    }
+}

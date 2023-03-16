@@ -12,6 +12,8 @@ import About from './components/category/About';
 import Categories from './components/category/Categories';
 import { Discount } from './components/category/Discount';
 import Why_us from './components/category/Why_us';
+import Questions from './components/category/Questions'
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
       <Between_why />
       <Why_us />
       <Between_why_us />
+      <Questions />
       {/* <Product /> */}
+      <Footer />
       <Switch>
         <Route path='/home' exact component={HomePages} />
       </Switch>

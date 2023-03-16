@@ -1,0 +1,15 @@
+.questions_inside #icon {
+    background: url('../../assets/images/icon.png');
+    background-size: 51%;
+    background-position-x: 0%;
+    background-position-y: 60%;
+    width: 116px;
+    height: 64px;
+    background-repeat: no-repeat;
+}
+
+#question_inside {
+    display: flex;
+    justify-content: space-between;
+    
+}

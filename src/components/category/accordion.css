@@ -1,0 +1,43 @@
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    /* border-bottom: 1px solid #ccc; */
+
+    color: #a59489;
+    font-family: 'Lexend', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+
+  }
+  
+  .accordion-header .active  {
+    border-bottom: none;
+  
+
+  }
+
+  .accordion-body {
+    border-bottom: 1px solid #ccc;
+    display: none;
+    color: rgb(180,167,158);
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    padding-bottom: 20px;
+  }
+  
+  .accordion-body.active {
+    display: block;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  
+  .accordion-header-icon {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
