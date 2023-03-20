@@ -41,6 +41,7 @@ const cartSlice = createSlice({
     },
     removeAllCart: (state, { payload }) => {
       state.itemsList = state.itemsList.filter((item) => item.id !== payload)
+      state.totalQuantity = state.itemsList.reduce((acc, item) => acc + item.quantity, 0)
     },
   },
 })

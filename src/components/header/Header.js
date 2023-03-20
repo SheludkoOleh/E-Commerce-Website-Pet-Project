@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
-import logo from '../../assets/images/logo.jpg';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Facebook, Instagram, Close, Menu } from '@mui/icons-material';
 import { Card } from './Card';
+import logo from '../../assets/images/logo.jpg';
 import './header.css';
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const handleSidebarToggle = () => {
-    setIsSidebarOpen(prevState => !prevState);
+  const toggleSidebar = () => {
+    setIsSidebarOpen((isSidebarOpen) => !isSidebarOpen);
   };
 
-  const handleSidebarClose = () => {
+  const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
 
@@ -23,10 +20,10 @@ const Header = () => {
     <header className="header">
       <div className="container flex">
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" title="Logo" />
         </div>
         <nav className="nav">
-          <ul className={isSidebarOpen ? 'nav-links-sidebar' : 'nav-links'} onClick={handleSidebarClose}>
+          <ul className={isSidebarOpen ? 'nav-links-sidebar' : 'nav-links'} onClick={closeSidebar}>
             <li>
               <Link to="/home">HomePages</Link>
             </li>
@@ -42,18 +39,23 @@ const Header = () => {
             <li>
               <Link to="/contact">Контакти</Link>
             </li>
-            </ul>
+          </ul>
         </nav>
-        <ul className={isSidebarOpen ? 'nav-links-sidebar' : 'nav-links'} onClick={handleSidebarClose}>
-            <li className="icon">
-              <FacebookIcon className="HeaderIcon" />
-              <InstagramIcon className="HeaderIcon" />
-              <Card className="HeaderIcon" />
+        <div className='icon_header'>
+          <ul>
+            <li>
+              <Facebook aria-label="Facebook" className="HeaderIcon" />
+            </li>
+            <li>
+              <Instagram aria-label="Instagram" className="HeaderIcon" />
+            </li>
+            <li>
+              <Card aria-label="Card" className="HeaderIcon" />
             </li>
           </ul>
-        
-        <button className="navbar-items-icon" onClick={handleSidebarToggle}>
-          {isSidebarOpen ? <CloseIcon /> : <MenuIcon />}
+        </div>
+        <button className="navbar-items-icon" onClick={toggleSidebar} aria-label={isSidebarOpen ? 'Close menu' : 'Open menu'}>
+          {isSidebarOpen ? <Close /> : <Menu />}
         </button>
       </div>
     </header>

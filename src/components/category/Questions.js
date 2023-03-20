@@ -21,11 +21,6 @@ function Questions() {
                 <div className='text_question'>
                     <Accordion />
                 </div>
-                {/* <div className='text_question'>
-                    <h3>How can I make the order?</h3>
-                        <p>Simply add the soap you like to the shopping cart and specify your shipping address. We provide free delivery for orders over $40.</p>
-                    <h3>Do you have an offline store?</h3>
-                </div> */}
             </div>
             <div className='img_about'></div>
              <img className='about' src={questions} alt=''></img>

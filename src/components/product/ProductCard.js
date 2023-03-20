@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
 import { ImArrowRight2 } from 'react-icons/im';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../store/cartSlice';
 
-export const ProductCard = ({ productKey, id, cover, name, price }) => {
+
+
+
+export const ProductCard = ({ id, cover, name, price }) => {
   const dispatch = useDispatch();
 
   const addToCart = () => {
@@ -27,6 +30,7 @@ export const ProductCard = ({ productKey, id, cover, name, price }) => {
             <ImArrowRight2 />
           </a>
         </button>
+
       </div>
     </div>
   );

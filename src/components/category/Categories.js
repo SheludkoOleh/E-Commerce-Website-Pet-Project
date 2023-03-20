@@ -1,6 +1,4 @@
 import React from "react";
-import Glider from "react-glider";
-import { product } from "../../assets/data/data";
 import ProductCarousel from './Carousel'
 import '../../assets/styless/typography.css'
 import './categories.css'

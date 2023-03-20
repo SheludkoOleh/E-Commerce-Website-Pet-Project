@@ -1,5 +1,4 @@
 import React from 'react'
-import icon from "../../assets/images/icon.png"
 import "./product.css"
 import '../../assets/styless/typography.css'
 import { product } from '../../assets/data/data'

@@ -88,6 +88,14 @@
     background-color: rgb(251, 235, 222);
 }
 
+
+.shopping-cart-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
 @media screen and (max-width: 850px) {
     .conteinergrid3 {
         display: grid;

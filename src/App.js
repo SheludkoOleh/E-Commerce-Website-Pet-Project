@@ -29,7 +29,7 @@ function App() {
       <Why_us />
       <Between_why_us />
       <Questions />
-      {/* <Product /> */}
+      <Product />
       <Footer />
       <Switch>
         <Route path='/home' exact component={HomePages} />
