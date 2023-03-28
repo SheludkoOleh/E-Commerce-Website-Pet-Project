@@ -4,9 +4,17 @@ import { Facebook, Instagram, Close, Menu } from '@mui/icons-material';
 import { Card } from './Card';
 import logo from '../../assets/images/logo.jpg';
 import './header.css';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../firebase/firebaseConfig';
+import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const navigate = useNavigate()
 
   const toggleSidebar = () => {
     setIsSidebarOpen((isSidebarOpen) => !isSidebarOpen);
@@ -15,6 +23,15 @@ const Header = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+
+  const logoutUser = () => {
+    signOut(auth).then(() => {
+      toast.success("Logout Successful")
+      // navigate('/home');
+    }).catch((error) => {
+      toast.error(error.message) 
+    });
+  }
 
   return (
     <header className="header">
@@ -38,6 +55,17 @@ const Header = () => {
             </li>
             <li>
               <Link to="/contact">Контакти</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/register">Register</Link>
+            </li>
+            <li>
+              <Link to="/home" onClick={logoutUser}>
+                Logout
+              </Link>
             </li>
           </ul>
         </nav>
